@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene fill="#ffffff00" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #635985; -fx-background-radius: 20; -fx-border-color: #000000; -fx-border-radius: 12; -fx-border-width: 4;">      <VBox alignment="TOP_CENTER" layoutX="43.0" layoutY="33.0" prefHeight="325.0" prefWidth="716.0" spacing="20.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="32.0">
+        <Label alignment="CENTER" text="Add Event" wrapText="true">
+            <font>
+                <Font name="Bubblegum Sans" size="18.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+            <children>
+                <ComboBox fx:id="eventDayComboBox" prefHeight="26.0" prefWidth="335.0" promptText="Select Day" stylesheets="@combobox.css" />
+                <ComboBox fx:id="eventCategoryComboBox" prefHeight="26.0" prefWidth="335.0" promptText="Select Category" stylesheets="@combobox.css" />
+            </children>
+        </HBox>
+        <TextField fx:id="eventNameTextField" promptText="Enter Name (required)" stylesheets="@textBox.css">
+            <font>
+                <Font name="Bubblegum Sans" size="12.0" />
+            </font>
+        </TextField>
+        <TextArea fx:id="eventDescriptionTextArea" prefHeight="200.0" prefWidth="200.0" promptText="Enter Description (optional)" />
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="12.0">
+            <children>
+                <ComboBox fx:id="eventStartHour" prefWidth="170.0" promptText="Select Start Hour" stylesheets="@combobox.css" />
+                <ComboBox fx:id="eventStartMinute" prefWidth="170.0" promptText="Select Start Minute" stylesheets="@combobox.css" />
+                <ComboBox fx:id="eventDurationHour" prefWidth="170.0" promptText="Select Duration Hour" stylesheets="@combobox.css" />
+                <ComboBox fx:id="eventDurationMinute" prefWidth="170.0" promptText="Select Duration Minute" stylesheets="@combobox.css" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+            <children>
+                <Button fx:id="saveEvent" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" stylesheets="@button.css" text="SAVE">
+                    <font>
+                        <Font name="Bubblegum Sans" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cancelEvent" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" stylesheets="@button.css" text="CANCEL">
+                    <font>
+                        <Font name="Bubblegum Sans" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </HBox>
+    </VBox>
+    </AnchorPane>
+</Scene>

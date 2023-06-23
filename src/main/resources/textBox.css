@@ -1,0 +1,11 @@
+.text-field {
+    -fx-background-color: #393053;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    -fx-border-color: #000000;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-font-family: 'Bubblegum Sans';
+}

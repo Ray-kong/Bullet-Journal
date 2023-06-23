@@ -1,0 +1,141 @@
+{
+  "name" : "Journal",
+  "journal-day-jsons" : [ {
+    "day-of-week" : "MON",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day-of-week" : "SUN",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day-of-week" : "TUE",
+    "events" : [ ],
+    "tasks" : [ {
+      "name" : "Clean Model",
+      "description" : null,
+      "dayOfWeek" : "TUE",
+      "category" : {
+        "name" : "OOD",
+        "color" : {
+          "red" : 0.800000011920929,
+          "green" : 0.20000000298023224,
+          "blue" : 0.20000000298023224,
+          "opacity" : 1.0
+        }
+      },
+      "completed" : true
+    }, {
+      "name" : "Splash Screen",
+      "description" : null,
+      "dayOfWeek" : "TUE",
+      "category" : {
+        "name" : "OOD",
+        "color" : {
+          "red" : 0.800000011920929,
+          "green" : 0.20000000298023224,
+          "blue" : 0.20000000298023224,
+          "opacity" : 1.0
+        }
+      },
+      "completed" : true
+    } ]
+  }, {
+    "day-of-week" : "WED",
+    "events" : [ {
+      "name" : "OOD Lab",
+      "description" : "Work on PA05",
+      "day-of-week" : "THU",
+      "category" : {
+        "name" : "Lab",
+        "color" : {
+          "red" : 0.3019607961177826,
+          "green" : 0.4000000059604645,
+          "blue" : 0.800000011920929,
+          "opacity" : 1.0
+        }
+      },
+      "start-time" : "13:30",
+      "duration" : "01:40"
+    } ],
+    "tasks" : [ {
+      "name" : "TestFX",
+      "description" : "PA05 GUI Test",
+      "dayOfWeek" : "WED",
+      "category" : {
+        "name" : "OOD",
+        "color" : {
+          "red" : 0.800000011920929,
+          "green" : 0.20000000298023224,
+          "blue" : 0.20000000298023224,
+          "opacity" : 1.0
+        }
+      },
+      "completed" : false
+    }, {
+      "name" : "PA05 UI",
+      "description" : "Update UI",
+      "dayOfWeek" : "WED",
+      "category" : {
+        "name" : "OOD",
+        "color" : {
+          "red" : 0.800000011920929,
+          "green" : 0.20000000298023224,
+          "blue" : 0.20000000298023224,
+          "opacity" : 1.0
+        }
+      },
+      "completed" : true
+    } ]
+  }, {
+    "day-of-week" : "THU",
+    "events" : [ {
+      "name" : "Live Demo",
+      "description" : "https://markefontenot.notion.site/PA05-Java-Journal-8057462e72994ec0a4c0a8a07cd3a463",
+      "day-of-week" : "THU",
+      "category" : {
+        "name" : "OOD",
+        "color" : {
+          "red" : 0.800000011920929,
+          "green" : 0.20000000298023224,
+          "blue" : 0.20000000298023224,
+          "opacity" : 1.0
+        }
+      },
+      "start-time" : "11:40",
+      "duration" : "01:40"
+    } ],
+    "tasks" : [ ]
+  }, {
+    "day-of-week" : "FRI",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day-of-week" : "SAT",
+    "events" : [ ],
+    "tasks" : [ ]
+  } ],
+  "max-event-warn-limit" : 8,
+  "max-task-warn-limit" : 8,
+  "categories" : [ {
+    "name" : "OOD",
+    "color" : {
+      "red" : 0.800000011920929,
+      "green" : 0.20000000298023224,
+      "blue" : 0.20000000298023224,
+      "opacity" : 1.0
+    }
+  }, {
+    "name" : "Lab",
+    "color" : {
+      "red" : 0.3019607961177826,
+      "green" : 0.4000000059604645,
+      "blue" : 0.800000011920929,
+      "opacity" : 1.0
+    }
+  } ],
+  "notes" : {
+    "note" : "- PA05 Task:\n    - Test GUI\n    - Check Controller (maybe?)\n- Remember to ask the grade of PA04"
+  },
+  "password" : "df716711fdeee6ecfe9d5d6668948e91d2aeb31470debf2d5aa14d0e7ace4d03"
+}

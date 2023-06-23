@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <root>
+      <AnchorPane fx:id="rootPane" prefHeight="805.0" prefWidth="1322.0" style="-fx-background-color: #9575DE;">
+         <MenuBar fx:id="menuBar" prefHeight="27.0" prefWidth="1322.0" style="-fx-background-color: #B1AFFF;">
+           <menus>
+               <Menu mnemonicParsing="false" text="Preference">
+                  <items>
+                     <MenuItem fx:id="menuRename" mnemonicParsing="false" text="Rename Journal" />
+                     <MenuItem fx:id="menuMaxEvent" mnemonicParsing="false" text="Event Warning Limits" />
+                     <MenuItem fx:id="menuMaxTask" mnemonicParsing="false" text="Task Warning Limits" />
+                  </items>
+               </Menu>
+             <Menu mnemonicParsing="false" text="File">
+               <items>
+                 <MenuItem fx:id="menuSave" mnemonicParsing="false" text="Save Journal" />
+                     <MenuItem fx:id="menuLoad" mnemonicParsing="false" text="Load Journal" />
+                     <MenuItem fx:id="menuTemplate" mnemonicParsing="false" text="Create Journal with Template" />
+               </items>
+             </Menu>
+               <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                     <MenuItem fx:id="menuEditNote" mnemonicParsing="false" text="Edit Notes" />
+                  </items>
+               </Menu>
+             <Menu mnemonicParsing="false" text="Insert">
+               <items>
+                 <MenuItem fx:id="menuAddEvent" mnemonicParsing="false" text="New Event" />
+                     <MenuItem fx:id="menuAddTask" mnemonicParsing="false" text="New Task" />
+                 <MenuItem fx:id="menuAddCategory" mnemonicParsing="false" text="New Category" />
+               </items>
+             </Menu>
+           </menus>
+         </MenuBar>
+         <HBox layoutY="26.0" prefHeight="778.0" prefWidth="1322.0">
+            <children>
+               <VBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="835.0">
+                     <Label fx:id="journalName" stylesheets="@importFont.css" text="My Journal">
+                        <font>
+                           <Font name="Bubblegum Sans" size="30.0" />
+                        </font>
+                     </Label>
+                  </HBox>
+                  <HBox prefHeight="728.0" prefWidth="1322.0">
+                     <VBox prefHeight="728.0" prefWidth="1322.0">
+                        <HBox prefHeight="571.0" prefWidth="1921.0">
+                           <VBox alignment="TOP_CENTER" prefWidth="189.0" style="-fx-background-color: #6554AF; -fx-background-radius: 10; -fx-border-color: #2B2730; -fx-border-radius: 9; -fx-border-width: 3;">
+                              <children>
+                                 <Label text="Sunday">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="sunProgressBarLabel" text="Remaining Task: 0">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <ProgressBar fx:id="sunProgressBar" prefHeight="40.0" prefWidth="183.0" progress="0.0" />
+                                 <ScrollPane prefHeight="535.0" prefWidth="97.0" style="-fx-border-width: 2; -fx-background-radius: 10; -fx-border-color: #635985; -fx-border-radius: 9;">
+                                    <content>
+                                       <VBox fx:id="sunBox" alignment="TOP_CENTER" prefHeight="503.0" prefWidth="177.0" spacing="10.0" style="-fx-border-radius: 3; -fx-background-color: #E3DFFD; -fx-background-radius: 3;" />
+                                    </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox alignment="TOP_CENTER" prefWidth="189.0" style="-fx-background-color: #6554AF; -fx-background-radius: 10; -fx-border-color: #2B2730; -fx-border-radius: 9; -fx-border-width: 3;">
+                              <children>
+                                 <Label text="Monday">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="monProgressBarLabel" text="Remaining Task: 0">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <ProgressBar fx:id="monProgressBar" prefHeight="40.0" prefWidth="183.0" progress="0.0" />
+                                 <ScrollPane prefHeight="535.0" prefWidth="132.0" style="-fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 9; -fx-border-color: #635985;">
+                                    <content>
+                                       <VBox fx:id="monBox" alignment="TOP_CENTER" prefHeight="503.0" prefWidth="177.0" spacing="10.0" style="-fx-border-radius: 3; -fx-background-color: ECF2FF; -fx-background-radius: 3;" />
+                                    </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox alignment="TOP_CENTER" prefWidth="189.0" style="-fx-background-color: #6554AF; -fx-background-radius: 10; -fx-border-color: #2B2730; -fx-border-radius: 9; -fx-border-width: 3;">
+                              <children>
+                                 <Label text="Tuesday">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="tueProgressBarLabel" text="Remaining Task: 0">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <ProgressBar fx:id="tueProgressBar" prefHeight="39.0" prefWidth="183.0" progress="0.0" />
+                                 <ScrollPane prefHeight="535.0" prefWidth="132.0" style="-fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 9; -fx-border-color: #635985;">
+                                    <content>
+                                       <VBox fx:id="tueBox" alignment="TOP_CENTER" prefHeight="503.0" prefWidth="177.0" spacing="10.0" style="-fx-border-radius: 3; -fx-background-color: #E3DFFD; -fx-background-radius: 3;" />
+                                    </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox alignment="TOP_CENTER" prefWidth="189.0" style="-fx-background-color: #6554AF; -fx-background-radius: 10; -fx-border-color: #2B2730; -fx-border-radius: 9; -fx-border-width: 3;">
+                              <children>
+                                 <Label text="Wednesday">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="wedProgressBarLabel" text="Remaining Task: 0">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <ProgressBar fx:id="wedProgressBar" prefHeight="40.0" prefWidth="183.0" progress="0.0" />
+                                 <ScrollPane prefHeight="535.0" prefWidth="132.0" style="-fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 9; -fx-border-color: #635985;">
+                                    <content>
+                                       <VBox fx:id="wedBox" alignment="TOP_CENTER" prefHeight="503.0" prefWidth="177.0" spacing="10.0" style="-fx-border-radius: 3; -fx-background-color: ECF2FF; -fx-background-radius: 3;" />
+                                    </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox alignment="TOP_CENTER" prefWidth="189.0" style="-fx-background-color: #6554AF; -fx-background-radius: 10; -fx-border-color: #2B2730; -fx-border-radius: 9; -fx-border-width: 3;">
+                              <children>
+                                 <Label text="Thursday">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="thuProgressBarLabel" text="Remaining Task: 0">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <ProgressBar fx:id="thuProgressBar" prefHeight="40.0" prefWidth="183.0" progress="0.0" />
+                                 <ScrollPane prefHeight="535.0" prefWidth="132.0" style="-fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 9; -fx-border-color: #635985;">
+                                    <content>
+                                       <VBox fx:id="thuBox" alignment="TOP_CENTER" prefHeight="503.0" prefWidth="177.0" spacing="10.0" style="-fx-border-radius: 3; -fx-background-color: #E3DFFD; -fx-background-radius: 3;" />
+                                    </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox alignment="TOP_CENTER" prefWidth="189.0" style="-fx-background-color: #6554AF; -fx-background-radius: 10; -fx-border-color: #2B2730; -fx-border-radius: 9; -fx-border-width: 3;">
+                              <children>
+                                 <Label text="Friday">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="friProgressBarLabel" text="Remaining Task: 0">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <ProgressBar fx:id="friProgressBar" prefHeight="40.0" prefWidth="183.0" progress="0.0" />
+                                 <ScrollPane prefHeight="535.0" prefWidth="132.0" style="-fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 9; -fx-border-color: #635985;">
+                                    <content>
+                                       <VBox fx:id="friBox" alignment="TOP_CENTER" prefHeight="503.0" prefWidth="177.0" spacing="10.0" style="-fx-border-radius: 3; -fx-background-color: ECF2FF; -fx-background-radius: 3;" />
+                                    </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                           <VBox alignment="TOP_CENTER" prefWidth="189.0" style="-fx-background-color: #6554AF; -fx-background-radius: 10; -fx-border-color: #2B2730; -fx-border-radius: 9; -fx-border-width: 3;">
+                              <children>
+                                 <Label text="Saturday">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="satProgressBarLabel" text="Remaining Task: 0">
+                                    <font>
+                                       <Font name="Bubblegum Sans" size="15.0" />
+                                    </font>
+                                 </Label>
+                                 <ProgressBar fx:id="satProgressBar" prefHeight="40.0" prefWidth="183.0" progress="0.0" />
+                                 <ScrollPane prefHeight="535.0" prefWidth="132.0" style="-fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 9; -fx-border-color: #635985;">
+                                    <content>
+                                       <VBox fx:id="satBox" alignment="TOP_CENTER" prefHeight="503.0" prefWidth="177.0" spacing="10.0" style="-fx-border-radius: 3; -fx-background-color: #E3DFFD; -fx-background-radius: 3;" />
+                                    </content>
+                                 </ScrollPane>
+                              </children>
+                           </VBox>
+                        </HBox>
+                        <HBox prefHeight="157.0" prefWidth="1697.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="157.0" prefWidth="384.0">
+                                 <children>
+                                    <Label text="Task Queue">
+                                       <font>
+                                          <Font name="Bubblegum Sans" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ScrollPane prefHeight="220.0" prefWidth="384.0" style="-fx-border-width: 2; -fx-border-radius: 5; -fx-border-color: #2B2730;">
+                                       <content>
+                                          <VBox fx:id="taskQueueBox" alignment="TOP_CENTER" prefHeight="130.0" prefWidth="378.0" spacing="10.0" style="-fx-background-color: #B1AFFF; -fx-background-radius: 5;" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="157.0" prefWidth="372.0">
+                                 <children>
+                                    <Label text="Weekly Overview">
+                                       <font>
+                                          <Font name="Bubblegum Sans" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ScrollPane prefHeight="220.0" prefWidth="167.0" style="-fx-border-color: #2B2730; -fx-border-width: 2; -fx-border-radius: 5;">
+                                       <content>
+                                          <VBox fx:id="weeklyOverviewBox" alignment="TOP_CENTER" prefHeight="130.0" prefWidth="366.0" spacing="10.0" style="-fx-background-color: #B1AFFF; -fx-background-radius: 5;" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="157.0" prefWidth="566.0">
+                                 <children>
+                                    <Label text="Notes">
+                                       <font>
+                                          <Font name="Bubblegum Sans" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextArea fx:id="notesTextArea" editable="false" prefHeight="220.0" prefWidth="167.0" wrapText="true">
+                                       <font>
+                                          <Font name="Bubblegum Sans" size="13.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </VBox>
+                  </HBox>
+               </VBox>
+            </children>
+         </HBox>
+      </AnchorPane>
+   </root>
+</Scene>

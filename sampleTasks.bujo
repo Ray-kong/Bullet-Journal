@@ -1,0 +1,52 @@
+{
+  "name" : "Journal",
+  "journal-day-jsons" : [ {
+    "day-of-week" : "SUN",
+    "events" : [ ],
+    "tasks" : [ {
+      "name" : "name",
+      "description" : "description",
+      "dayOfWeek" : "SUN",
+      "category" : {
+        "name" : "Red",
+        "color" : {
+          "red" : 1.0,
+          "green" : 0.0,
+          "blue" : 0.0,
+          "opacity" : 1.0
+        }
+      },
+      "completed" : false
+    } ]
+  }, {
+    "day-of-week" : "MON",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day-of-week" : "TUE",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day-of-week" : "WED",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day-of-week" : "THU",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day-of-week" : "FRI",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day-of-week" : "SAT",
+    "events" : [ ],
+    "tasks" : [ ]
+  } ],
+  "max-event-warn-limit" : 8,
+  "max-task-warn-limit" : 8,
+  "categories" : [ ],
+  "notes" : {
+    "note" : ""
+  }
+}

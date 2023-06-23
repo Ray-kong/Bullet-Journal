@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #635985; -fx-background-radius: 20; -fx-border-color: #000000; -fx-border-radius: 12; -fx-border-width: 4;">      <VBox alignment="TOP_CENTER" layoutX="42.0" layoutY="32.0" prefHeight="309.0" prefWidth="318.0" spacing="20.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="31.0">
+        <Label alignment="CENTER" text="Edit Notes" wrapText="true">
+            <font>
+                <Font name="Bubblegum Sans" size="18.0" />
+            </font>
+        </Label>
+         <TextArea fx:id="editNotesTextArea" prefHeight="200.0" prefWidth="200.0"/>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+            <children>
+                <Button fx:id="saveNotes" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="SAVE" stylesheets="button.css"/>
+                <Button fx:id="cancelNotes" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="CANCEL" stylesheets="button.css"/>
+            </children>
+        </HBox>
+    </VBox>
+    </AnchorPane>
+</Scene>

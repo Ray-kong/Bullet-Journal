@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene fill="#ffffff00" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #635985; -fx-background-radius: 20; -fx-border-color: #000000; -fx-border-radius: 12; -fx-border-width: 4;">      <VBox alignment="TOP_CENTER" layoutX="44.0" layoutY="19.0" prefHeight="170.0" prefWidth="314.0" spacing="10.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="18.0">
+        <Label alignment="CENTER" stylesheets="@importFont.css" text="Create Category" wrapText="true">
+            <font>
+                <Font name="Bubblegum Sans" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="categoryNameTextField" alignment="CENTER" prefHeight="16.0" prefWidth="306.0" promptText="Category Name" stylesheets="@textBox.css">
+            <font>
+                <Font name="Bubblegum Sans" size="12.0" />
+            </font>
+        </TextField>
+         <ColorPicker fx:id="categoryColorPicker" prefHeight="76.0" prefWidth="306.0" promptText="Category Color" stylesheets="@ourFont.css">
+
+            <VBox.margin>
+               <Insets top="5.0" />
+            </VBox.margin>
+         </ColorPicker>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+            <children>
+                <Button fx:id="saveCategoryButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" stylesheets="@button.css" text="SAVE">
+                    <font>
+                        <Font name="Bubblegum Sans" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cancelCategoryButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" stylesheets="@button.css" text="CANCEL">
+                    <font>
+                        <Font name="Bubblegum Sans" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </VBox>
+    </AnchorPane>
+</Scene>

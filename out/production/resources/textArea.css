@@ -1,0 +1,51 @@
+.text-area .content {
+    -fx-highlight-fill: #000000;
+}
+
+
+/*.text-area .content {*/
+/*    -fx-background-color: #393053;*/
+/*    -fx-background-radius: 20;*/
+/*    -fx-border-color: #000000;*/
+/*    -fx-border-radius: 20;*/
+/*    -fx-border-width: 1;*/
+/*    -fx-background-insets: 0;*/
+/*    -fx-border-insets: 0;*/
+/*}*/
+
+/*.text-area:focused .content {*/
+/*    -fx-background-color: #393053;*/
+/*    -fx-background-radius: 20;*/
+/*    -fx-border-color: #000000;*/
+/*    -fx-border-radius: 20;*/
+/*    -fx-border-width: 1;*/
+/*    -fx-background-insets: 0;*/
+/*    -fx-border-insets: 0;*/
+/*}*/
+/*.text-area:selected .content {*/
+/*    -fx-background-color: #393053;*/
+/*    -fx-background-radius: 20;*/
+/*    -fx-border-color: #000000;*/
+/*    -fx-border-radius: 20;*/
+/*    -fx-border-width: 1;*/
+/*    -fx-background-insets: 0;*/
+/*    -fx-border-insets: 0;*/
+/*}*/
+/*.text-area:editable .content {*/
+/*    -fx-background-color: #393053;*/
+/*    -fx-background-radius: 20;*/
+/*    -fx-border-color: #000000;*/
+/*    -fx-border-radius: 20;*/
+/*    -fx-border-width: 1;*/
+/*    -fx-background-insets: 0;*/
+/*    -fx-border-insets: 0;*/
+/*}*/
+/* .content {*/
+/*    -fx-background-color: #393053;*/
+/*    -fx-background-radius: 20;*/
+/*    -fx-border-color: #000000;*/
+/*    -fx-border-radius: 20;*/
+/*    -fx-border-width: 1;*/
+/*    -fx-background-insets: 0;*/
+/*    -fx-border-insets: 0;*/
+/*}*/
